@@ -26,3 +26,6 @@ val model = kmeans.fit(training)
 val WSSSE = model.computeCost(training)
 //12. Mostrar los resultados
 println(s"The within set sum of squared errors was: ${WSSSE} ")
+println("Cluster Centers: ")
+model.clusterCenters.foreach(println)
+
